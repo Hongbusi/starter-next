@@ -13,4 +13,5 @@ export const siteConfig = {
     twitter: 'https://twitter.com/Hongbusi',
     github: 'https://github.com/Hongbusi/start-next',
   },
+  gaId: '',
 }
