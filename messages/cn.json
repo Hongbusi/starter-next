@@ -1,0 +1,10 @@
+{
+  "LocaleSelector": {
+    "label": "切换语言",
+    "locale": "{locale, select, en {🇺🇸 English} cn {🇨🇳 中文} other {Unknown}}"
+  },
+  "IndexPage": {
+    "title": "next-intl 示例",
+    "description": "这是一个基本的示例"
+  }
+}

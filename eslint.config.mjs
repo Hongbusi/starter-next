@@ -6,6 +6,6 @@ export default antfu({
     'node/prefer-global/process': 'off',
   },
   ignores: [
-    'components/ui',
+    'src/components/ui',
   ],
 })

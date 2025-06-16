@@ -1,0 +1,10 @@
+{
+  "LocaleSelector": {
+    "label": "Change language",
+    "locale": "{locale, select, en {🇺🇸 English} cn {🇨🇳 中文} other {Unknown}}"
+  },
+  "IndexPage": {
+    "title": "next-intl example",
+    "description": "This is a basic example"
+  }
+}
