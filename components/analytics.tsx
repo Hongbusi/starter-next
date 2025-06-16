@@ -1,10 +1,13 @@
+'use client'
+
 import { GoogleAnalytics } from '@next/third-parties/google'
 
-import { siteConfig } from '@/config/site'
-
 export function Analytics() {
-  if (process.env.NODE_ENV === 'production' && !siteConfig.gaId)
+  const isProd = process.env.NODE_ENV === 'production'
+  const googleAnalyticsId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID
+
+  if (!isProd || !googleAnalyticsId)
     return null
 
-  return <GoogleAnalytics gaId={siteConfig.gaId} />
+  return <GoogleAnalytics gaId={googleAnalyticsId} />
 }
