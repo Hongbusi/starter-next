@@ -4,7 +4,7 @@
     "locale": "{locale, select, en {🇺🇸 English} cn {🇨🇳 中文} other {Unknown}}"
   },
   "IndexPage": {
-    "title": "next-intl example",
-    "description": "This is a basic example"
+    "title": "starter-next",
+    "description": "This is a basic template."
   }
 }

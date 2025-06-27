@@ -11,7 +11,7 @@ import '../globals.css'
 
 export const metadata: Metadata = {
   title: 'Starter Next',
-  description: 'Starter Next',
+  description: 'This is a basic template.',
 }
 
 export default async function RootLayout({ children, params }: Readonly<{ children: React.ReactNode, params: Promise<{ locale: string }> }>) {

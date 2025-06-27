@@ -1,5 +1,5 @@
 import { LocaleSelector } from '@/components/locale-selector'
-import { ModeToggle } from '@/components/mode-toggle'
+import { ThemeToggle } from '@/components/theme-toggle'
 import { Link } from '@/i18n/navigation'
 
 export function SiteHeader() {
@@ -14,7 +14,7 @@ export function SiteHeader() {
 
         <div className="flex flex-1 items-center justify-end space-x-4">
           <LocaleSelector />
-          <ModeToggle />
+          <ThemeToggle />
         </div>
       </div>
     </header>

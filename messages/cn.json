@@ -4,7 +4,7 @@
     "locale": "{locale, select, en {🇺🇸 English} cn {🇨🇳 中文} other {Unknown}}"
   },
   "IndexPage": {
-    "title": "next-intl 示例",
-    "description": "这是一个基本的示例"
+    "title": "starter-next",
+    "description": "这是一个基础的模版。"
   }
 }
