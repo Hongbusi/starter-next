@@ -1,24 +1,24 @@
 'use client'
 
 import Script from 'next/script'
+import { analyticsConfig } from '@/config'
 
-export function BaiduTongji() {
-  const isProd = process.env.NODE_ENV === 'production'
-  const baiduTongjiId = process.env.NEXT_PUBLIC_BAIDU_TONGJI_ID
+export function BaiduAnalytics() {
+  const { enabled, baiduAnalyticsId } = analyticsConfig
 
-  if (!isProd || !baiduTongjiId)
+  if (!enabled || !baiduAnalyticsId)
     return null
 
   return (
     <Script
-      id="baidu-tongji"
+      id="baidu-analytics"
       strategy="afterInteractive"
       dangerouslySetInnerHTML={{
         __html: `
           var _hmt = _hmt || [];
           (function() {
             var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?${baiduTongjiId}";
+            hm.src = "https://hm.baidu.com/hm.js?${baiduAnalyticsId}";
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
           })();

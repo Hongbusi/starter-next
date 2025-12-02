@@ -1,12 +1,12 @@
 'use client'
 
 import Script from 'next/script'
+import { analyticsConfig } from '@/config'
 
 export function GoogleAnalytics() {
-  const isProd = process.env.NODE_ENV === 'production'
-  const googleAnalyticsId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID
+  const { enabled, googleAnalyticsId } = analyticsConfig
 
-  if (!isProd || !googleAnalyticsId)
+  if (!enabled || !googleAnalyticsId)
     return null
 
   return (
